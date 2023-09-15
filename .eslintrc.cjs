@@ -3,7 +3,7 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    extends: ['standard-with-typescript', 'plugin:react/recommended', "prettier"],
+    extends: ['standard-with-typescript', 'plugin:react/recommended', "prettier", "eslint:recommended",],
     overrides: [
         {
             env: {
@@ -19,8 +19,20 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
+    globals: {
+        React: 'writable'
+    },
     plugins: ['react'],
     "rules": {
-        "react/react-in-jsx-scope": "off"
+        "@typescript-eslint/no-misused-promises": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "require-jsdoc": ["error", {
+            "require": {
+                "FunctionDeclaration": true
+            }
+        }], //нужно писать коменты для https://eslint.org/docs/latest/rules/require-jsdoc
+        "react/react-in-jsx-scope": "off",
+        '@typescript-eslint/strict-boolean-expressions': 0,
+        "no-unused-vars": "off" //не использованные переменные warn
     }
 };

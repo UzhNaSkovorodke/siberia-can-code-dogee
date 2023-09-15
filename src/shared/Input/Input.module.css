@@ -1,0 +1,20 @@
+.input {
+    padding: 10px;
+    border-radius: 10px;
+    color: #5b5b5b;
+    border: none;
+    background: #e7e7e7;
+}
+
+.input:focus{
+    outline: solid 1px grey;
+}
+
+.input_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.warning_text{
+    color: lightcoral;
+}

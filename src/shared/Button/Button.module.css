@@ -1,0 +1,15 @@
+.button__color_primary {
+    background: #F6C77F;
+}
+
+.button{
+    padding: 10px;
+    color:white;
+    border: none;
+    outline: none;
+}
+
+.button__variant_word{
+    background: none;
+    color:  #F6C77F;
+}

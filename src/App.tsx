@@ -1,12 +1,14 @@
-import './App.css';
 import React from 'react';
+import { LoginPage } from './pages/LoginPage/LoginPage.tsx';
 
 const App: React.FC = () => {
-  return (
-    <div>
-      <></>
-    </div>
-  );
+    return (
+        <div>
+            <>
+                <LoginPage />
+            </>
+        </div>
+    );
 };
 
 export default App;
