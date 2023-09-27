@@ -1,8 +1,8 @@
 import s from './LoginPage.module.css';
 import React from 'react';
-import { Input } from '../../shared/Input/Input.tsx';
-import { Button } from '../../shared/Button/Button.tsx';
 import { useForm } from 'react-hook-form';
+import { Button } from '@shared/Button/Button.tsx';
+import { Input } from '@shared/Input/Input.tsx';
 
 export const LoginPage: React.FC = () => {
     const {

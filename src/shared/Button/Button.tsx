@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import s from './Button.module.css';
-import { classnames } from '../../utils';
+import { classnames } from '@utils/index.ts';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     tabIndex?: number;

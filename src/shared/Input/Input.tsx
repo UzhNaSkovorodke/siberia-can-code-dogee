@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import s from './Input.module.css';
-import { classnames } from '../../utils';
+import { classnames } from '@utils/index.ts';
 
 interface InputProps extends React.HTMLProps<HTMLInputElement> {
     isError?: boolean;

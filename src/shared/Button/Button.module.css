@@ -3,6 +3,7 @@
 }
 
 .button{
+    cursor: pointer;
     padding: 10px;
     color:white;
     border: none;
