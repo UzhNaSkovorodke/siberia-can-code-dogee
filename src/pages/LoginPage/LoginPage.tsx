@@ -3,8 +3,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Button } from '@shared/Button/Button.tsx';
 import { Input } from '@shared/Input/Input.tsx';
+import { useNavigate } from 'react-router-dom';
 
 export const LoginPage: React.FC = () => {
+    const navigate = useNavigate();
     const {
         register,
         handleSubmit,
@@ -65,7 +67,10 @@ export const LoginPage: React.FC = () => {
                         <Button
                             variant={'word'}
                             onClick={() => {
-                                console.log('to create new account');
+                                navigate('./registration', {
+                                    state: 'stateless',
+                                    replace: false
+                                });
                             }}>
                             create new account
                         </Button>
