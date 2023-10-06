@@ -28,6 +28,8 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "off",
         "require-jsdoc": ["error", {
             "require": {
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false,
                 "FunctionDeclaration": true
             }
         }], //нужно писать коменты для https://eslint.org/docs/latest/rules/require-jsdoc

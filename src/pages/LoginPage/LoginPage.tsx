@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { Button } from '@shared/Button/Button.tsx';
 import { Input } from '@shared/Input/Input.tsx';
 import { useNavigate } from 'react-router-dom';
+import { InputPassword } from '@shared/InputPassword/InputPassword.tsx';
 
 export const LoginPage: React.FC = () => {
     const navigate = useNavigate();
@@ -31,7 +32,6 @@ export const LoginPage: React.FC = () => {
                         <label className={s.form_label}>
                             <Input
                                 {...register('username', { required: true })}
-                                type='text'
                                 className={s.form_input}
                                 placeholder={'username'}
                                 isError={Boolean(errors.username)}
@@ -39,9 +39,8 @@ export const LoginPage: React.FC = () => {
                             />
                         </label>
                         <label className={s.form_label}>
-                            <Input
+                            <InputPassword
                                 {...register('password', { required: true })}
-                                type='text'
                                 className={s.form_input}
                                 placeholder={'password'}
                                 isError={Boolean(errors.password)}
@@ -51,7 +50,6 @@ export const LoginPage: React.FC = () => {
                         <label className={s.form_label}>
                             <Input
                                 {...register('email')}
-                                type='text'
                                 className={s.form_input}
                                 placeholder={'email'}
                                 isError={Boolean(errors.email)}
